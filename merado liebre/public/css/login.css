@@ -1,0 +1,427 @@
+/******** inicio de icono de mano y etc, del barra de busqueda y el logo y fondo no tocar jajaja **********/
+/* Paleta de colores */
+:root {
+    --color-amarillo: #EAC926;
+    --color-azul: #03264C;
+    --color-celeste: #1259c3;
+    --color-gris-oscuro: #666;
+    --color-gris-claro: #ebebeb;
+    --color-verde: #39b54a;
+  }
+  
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  
+  header {
+    font-family: 'Roboto'; 
+    background-color: #EAC926; /* Cambia el color aquí, para todo la pagina  */
+  }
+  
+  
+  /* el icono de la mano y Comprá en cuotas y sin tarjeta de crédito */
+  /* Estilos para el contenedor principal */
+  .contenedor-fila {
+    display: flex; /* Establece el contenedor como un flex container */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+   
+    
+  }
+  
+  /* Estilos para el logo */
+  .logo01 img {
+    max-width: 85%; /* Asegura que el logo no exceda el 100% del ancho del contenedor */
+    height: auto; /* Permite que el logo se ajuste proporcionalmente */
+    margin: 5%;
+    width: 500px;
+  }
+  
+  /* Estilos para la barra de búsqueda */
+  .search-container {
+    display: flex; /* Establece el contenedor como un flex container */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    max-width: 100%; /* Asegura que el logo no exceda el 100% del ancho del contenedor */
+    width: 800px;
+    height: auto;
+  }
+  
+  .search-container input {
+    width: 100%; /* Toma todo el espacio disponible */
+    padding: 8px; /* Ajusta el padding según tus necesidades */
+  }
+  
+  .search-container button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Estilos para los elementos de la clase .fila */
+  .fila {
+    display: flex; /* Establece el contenedor como un flex container */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+  }
+  
+  .icono-texto {
+    display: flex; /* Establece el elemento como un flex container */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+  }
+  
+  .icono-texto i {
+    margin: 5%; /* Margen derecho entre el icono y el texto */
+  }
+  
+  .fila-movil {
+    display: none; /* Oculta el elemento */
+  }
+  /********************/
+  
+  /* Estilos para dispositivos móviles */
+  @media screen and (max-width: 700px) {
+  header {
+    font-family: 'Roboto'; 
+    background-color: #EAC926; /* Cambia el color aquí, para todo la pagina  */
+  }
+  
+  
+  /* el icono de la mano y Comprá en cuotas y sin tarjeta de crédito */
+  /* Estilos para el contenedor principal */
+  .contenedor-fila {
+    display: flex; /* Establece el contenedor como un flex container */
+    gap: 0; /* Elimina el espacio entre los elementos internos */
+    
+  
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  img {
+   
+    overflow: clip;
+  }
+  
+  /* Estilos para el logo */
+  .logo01 img {
+    position: relative;
+    left:0px ; /*****esto mueve el objeto en ejes x y Y ****/ 
+    top: 0px;
+    width: 600px; /* Cambia el valor según el tamaño deseado */
+    height: auto; /* Permite que el logo se ajuste proporcionalmente */
+    padding: 5%;
+    
+  }
+  
+  /* Estilos para la barra de búsqueda */
+  .search-container {
+    display: flex; /* Establece el contenedor como un flex container */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    max-width: 150%; /* Asegura que el logo no exceda el 100% del ancho del contenedor */
+    height: auto;
+    
+  }
+  
+  .search-container input {
+    width: 100%; /* Toma todo el espacio disponible */
+    padding: 8px; /* Ajusta el padding según tus necesidades */
+  }
+  
+  .search-container button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .fila {
+    display: none; /* Oculta el elemento */
+  }
+  
+  .fila-movil {
+    display:contents; /* Oculta el elemento */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin: 0 auto; 
+  }
+  }
+  
+  
+  
+  
+  /******** fin de icono de mano y etc, del barra de busqueda y el logo y fondo no tocar jajaja **********/
+  
+  /******** opciones de arriba***************/ 
+  
+  
+  /* Estilos para el contenedor principal "opciones-arriba" */
+  .opciones-arriba {
+    display: flex; /* Establece el contenedor como un flex container */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    padding: 20px;
+  
+  }
+  
+  /* Estilos para la clase "opciones-mer" */
+  .opciones-mer {
+    display: flex; /* Establece la lista como un flex container */
+    list-style: none; /* Le quita los puntos a la lista */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Estilos para la clase "registros" */
+  .registros {
+    display: flex; /* Establece la lista como un flex container */
+    list-style: none; /* Le quita los puntos a la lista */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Estilos para los elementos de las listas */
+  .opciones-arriba li,
+  .registros li {
+    margin-right: 15px; /* Margen derecho entre cada elemento */
+  }
+  
+  /* Estilos para los enlaces de las listas */
+  .opciones-arriba li a,
+  .registros li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: black; /* Establece el color del texto en negro */
+  }
+  
+  /* Estilos para los iconos en la clase "registros" */
+  .registros i {
+    margin-left: 5px; /* Margen izquierdo entre el icono y el texto del enlace */
+  }
+  
+  /********* fin del fondo heder********/
+  
+  /* Estilos para el contenedor principal "opciones-arriba" */
+  .opciones-arriba {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centrar horizontalmente el contenido */
+   
+    padding: 10px; /* Espaciado interno para mejorar la apariencia */
+  }
+  
+  .boton-menu{
+    display: none; /* Ocultar el contenedor principal en pantallas de móvil */
+  }
+  
+  /* Media query para dispositivos móviles */
+  @media screen and (max-width: 700px) {
+    .opciones-arriba {
+      display: none; /* Ocultar el contenedor principal en pantallas de móvil */
+    }
+  
+    /*** css de menu hamburguesa ***********/
+  
+     /* Estilo para el ícono de barras */
+  .burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #1259c3;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  
+  /* Estilo para centrar el ícono en el menú */
+  /* Agrega esta clase al contenedor del menú */
+  .menu-container {
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  
+  .boton-menu{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+  }
+  
+  /*** fin  css de menu hamburguesa ***********/
+  }
+  
+  /************ fin de header fin de fin  **********************************************************************************************/
+  
+
+  /*********** inicio de footer *******************************************************************/
+
+  /* Estilos para el contenedor principal */
+
+
+/* Estilos para cada sección */
+section {
+    text-align: center; /* Centra el contenido de cada sección horizontalmente */
+    padding: 2%;
+  
+  }
+  
+  /* Estilos para el icono en cada sección */
+  section i {
+    font-size: 60px;
+  }
+  
+  
+  
+  /* Estilos iniciales */
+  .icono-tarjeta,
+  .icono-de-envio,
+  .icono-proteccion {
+    font-size: 50px;
+    
+    color:  #005eff;
+    transition: color 0.3s, transform 0.3s; /* Agrega una transición suave para el cambio de color y el zoom */
+  }
+  
+  /* Efecto al pasar el ratón */
+  .icono-tarjeta:hover,
+  .icono-de-envio:hover,
+  .icono-proteccion:hover {
+    color: #ff0000; /* Cambia el color al rojo al pasar el ratón */
+    transform: scale(1.3); /* Hace un zoom del 20% al pasar el ratón */
+  }
+  
+  
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* Estilos para los botones */
+  .button-submit,
+  .button-reset {
+    font-size: 26px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s; /* Agrega una transición suave para el zoom y el cambio de color */
+  }
+  
+  /* Estilo por defecto del botón de enviar */
+  .button-submit {
+    background-color: #005effa2;
+    color: #fff;
+  }
+  
+  /* Estilo por defecto del botón de borrar */
+  .button-reset {
+    background-color: #ff0000a7;
+    color: #fff;
+  }
+  
+  /* Efecto al pasar el ratón */
+  .button-submit:hover,
+  .button-reset:hover {
+    transform: scale(1.1); /* Hace un zoom del 10% al pasar el ratón */
+  }
+  
+  /* Cambio de color al pasar el ratón */
+  .button-submit:hover {
+    background-color: #006aff;
+  }
+  
+  .button-reset:hover {
+    background-color: #ff0000;
+  }
+
+  
+  /**************** fin de footorer ***************************************************************************************/
+
+
+  /************* inicio main ************************************************************************************************/
+
+
+  
+  main{
+    max-width: 100%;
+    height: auto;
+  background-color: #ebebeb;  
+  
+  }
+    
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+
+  .formulario {
+    background-color: #EAC926;
+    border: 1px solid #ccc;
+    padding: 5%;
+    border-radius: 5px;
+    max-width: 55%;
+    width: 100%;
+  }
+
+  .campos input[type="text"],
+  .campos input[type="password"] {
+    width: 97.5%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 110%;
+    width: 100%;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+    @media screen and (max-width: 700px) {
+     
+      .formulario{
+        background-color:  #EAC926;
+        padding: 10%;
+        max-width: 85%;
+        width: 100%;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+      }
+      
+      }
+  
+      @media screen and (min-width: 769px) and (max-width: 1023px) {
+        .formulario{
+          background-color:  #EAC926;
+          padding: 5%;
+          max-width: 80%;
+          width: 100%;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+          }
+  
+      }
+
+ 
